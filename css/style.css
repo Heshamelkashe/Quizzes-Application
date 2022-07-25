@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    border: 0;
+}
+body{
+    background-color: rgb(24, 24, 90);
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    padding: 1rem ;
+    background-color: white;
+}
+
+/***********************
+1- start from Header
+*************************/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #020270;
+}
+header .logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+header .logo i {
+    font-size: 35px;
+    color: #e9642a;
+}
+header .logo span {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-left: 9px;
+}
+
+/*********************************
+02- start of information on quiz
+*********************************/
+.info-User {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(128, 128, 128, 0.094); 
+}
+.info-User h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    color: black;
+}
+.info-User p {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.info-User ul {
+    padding: 1rem 0 ;
+    list-style: circle;
+    list-style-position: inside;
+    text-transform: capitalize;
+}
+.info-User ul h3 {
+    margin-bottom: 8px;
+    color: black;
+}
+.info-User ul li {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.info-User .user-name {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+.info-User .user-name label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: gray;
+    text-transform: capitalize;
+}
+.info-User .user-name input {
+    width: 230px;
+    height: 30px;
+    padding-left: 8px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid black;
+}
+.info-User .user-name input:focus {
+    border: 0;
+    box-shadow: 0 0 4px 1px #18185a;
+}
+.info-User .user-name input.active:focus {
+    border: 0;
+    box-shadow: 0 0 4px 1px #ef1b1b;
+}
+.info-User .user-name .mas_user {
+    display: none;
+    font-size: 12px;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+.info-User .user-name .openQuiz {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #18185a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/***********************
+03- start from quiz info 
+*************************/
+.quiz_info {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 2rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.389);
+    background-color: rgba(128, 128, 128, 0.094); 
+}
+
+/*******************************
+04- start from container-area 
+*******************************/
+.container-area {
+    width: 100%;
+    height: fit-content;
+    display: none;
+    padding: 10px ;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.094); 
+}
+.container-area .quiz-area {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 5px;
+}
+.container-area .quiz-area h2 {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+
+}
+/*Answer Area  */
+.container-area .answers-area {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.answers-area .answer {
+    width: 100%;
+    height: fit-content;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+}
+.answers-area .answer input {
+    width: 15px;
+    height: 13px;
+    margin-right: 5px;
+}
+.answers-area .answer label {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.container-area #submit_answer {
+    width: 50%;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+/**************************
+05- start from steps Quiz 
+***************************/
+.steps-quiz {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 1rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.389);
+    background-color: rgba(128, 128, 128, 0.094); 
+}
+.steps-quiz .bullets {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.steps-quiz .bullets span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+    margin: 0 3px;
+}
+.steps-quiz .bullets span.active {
+background-color: blue;
+}
+/* count Down */
+.steps-quiz .count-down {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.steps-quiz .count-down span {
+    font-size: 14px;
+    margin: 0 3px;
+}
+.steps-quiz .count-down i{
+    font-size: 13px;
+    margin-left: 5px;
+    color: gray;
+}
+
+/**************************
+06- start from Result 
+***************************/
+.result {
+    width: 100%;
+    height: fit-content;
+    padding: 4rem 1rem;
+    margin-top: 1rem;
+    background-color: rgba(128, 128, 128, 0.094); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.result i {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+.result h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.result .info-result {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px ;
+}
+.result span {
+    margin-left: 10px ;
+    font-size: 15px;
+}
+
+
+
+ /* Small  */
+@media (min-width: 330px) and (max-width: 760px) { 
+    .container {
+        width: 320px;
+        padding: 10px ;
+    }
+    .quiz_info {
+        display: flex;
+        height: 70px;
+        padding: 14px 10px;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+    }
+    .container-area .quiz-area h2 {
+        font-size: 16px;
+    }
+    .steps-quiz {
+        padding: 10px; 
+    }
+    .steps-quiz .bullets {
+        padding: 5px  ;
+    }
+    .steps-quiz .bullets span {
+        width: 10px;
+        height: 10px;
+    }
+
+
+}
+
+ /* Medium */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+        padding: 10px ;
+    }
+}
+
+/* Large  */
+@media (min-width: 992px) { 
+    .container {
+        width: 900px;
+        padding: 10px ;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Quizzes Application </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Jost:ital,wght@0,400;0,600;0,800;1,300&family=Lato:wght@300;400;700;900&family=Neonderthaw&family=Pacifico&family=Permanent+Marker&family=Praise&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Spline+Sans+Mono:wght@400;500;700&family=Spline+Sans:wght@700&family=Ubuntu:ital,wght@0,400;1,300;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class="logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML Quiz</span>
+                </div>
+            </header>
+
+            <!-- start of information on quiz  -->
+            <section class="info-User">
+                <h1>welcome to quiz app</h1>
+                <p> this quiz contains a total of 9 questions each question holds 5 points</p>
+                <ul>
+                    <h3>rules to quiz :</h3>
+                    <li> right questions give you 5 points.
+                    <li> incorrect questions lose you 5 points.
+                    <li>you will have 60 seconds to answer each question.
+                    <li>refreshing the page will reset the quiz.
+                </ul>
+                <div class="user-name">
+                    <label for="userName">enter your full name</label>
+                    <input type="text" id="userName" >
+                    <span class="mas_user">enter your name</span>
+                    <button class="openQuiz">open Quiz</button>
+                </div>
+            </section>
+            <!-- start from quiz info -->
+            <section class="quiz_info">
+                <div class="category">
+                    category:</span> HTML</span>
+                </div>
+                <div class="count">
+                    Question count: <span class="total-count">  </span> / <span class="handle-count"></span>
+                </div>
+            </section>
+
+            <!-- start from quiz Area -->
+            <section class="container-area">
+                <div class="quiz-area"></div>
+                <div class="answers-area"></div>
+                <button id="submit_answer"> submit </button>
+            </section>
+            
+            <!-- start from steps quiz -->
+            <section class="steps-quiz">
+                <div class="bullets"></div>
+                <div class="count-down">
+                    <div class="time"></div>
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+            </section>
+
+            <!-- start the Result -->
+            <section class="result">
+                <div class="icon"></div>
+                <h3></h3>
+                <div class="info-result">
+                    <p>Your Name : <span class="result-name"> </span></p>
+                    <p style="margin: 5px 0;">Your Score : <span class="score"></span></p>
+                    <p> Passing Score :<span>70% </span> </p>
+                </div>
+            </section>
+
+        </div>
+
+        <script src="js/app.js"></script> 
+    </body>
+</html>
